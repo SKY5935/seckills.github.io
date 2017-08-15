@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米官网</title>
+    <link href="css/xiaomi.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/xiaomi.js"></script>
+</head>
+<body>
+<!--<div class="head_img"><a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/1.PNG"></a></div>-->
+<div class="head_menu">
+    <div class="head_menu01">
+        <div class="head_menu01_first">
+            <ul>
+                <li><a href="#">小米商城
+                    <div class="head_menu01_first_hover01">
+
+                    </div>
+                </a>
+                </li>
+                <li><a href="#">MIUI</a></li>
+                <li><a href="#">米聊</a></li>
+                <li><a href="#">游戏</a></li>
+                <li><a href="#">多看阅读</a></li>
+                <li><a href="#">云服务</a></li>
+                <li><a href="#">金融</a></li>
+                <li><a href="#">小米商城移动版</a></li>
+                <li><a href="#">问题反馈</a></li>
+                <li><a href="#">Select Region</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="head_menu02">
+        <div class="head_menu02_first">
+            <ul>
+                <li><a href="#" data-target="#loginModal" data-toggle="modal">登录</a></li>
+                <li><a href="#" data-target=".bs-example-modal-lg" data-toggle="modal">注册</a></li>
+                <li><a href="#">消息通知</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="loginModal" class="modal fade" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" id="close0">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                    <h3 class="text-center text-primary">登录</h3>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form col-md-12 center-block">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" placeholder="请输入账号" id="tex" onblur="ten()">
+                            <label class="label001" id="label001"></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="pass" class="form-control input-lg" placeholder="请输入密码" onblur="texpass()">
+                            <label class="label002" id="label002"></label>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn1 btn-lg btn-block" onclick="ten()&texpass">立刻登录</button>
+                            <span><a href="#">找回密码</a></span>
+                            <span><a href="#" class="pull-right" data-target=".bs-example-modal-lg" data-toggle="modal">注册</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bs-example-modal-lg" aria-hidden="true" data-backdrop="static" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                    <h3 class="text-center text-primary">用户注册</h3>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return sub()" action="" method="post" name="form1">
+                        <ul>
+                            <li>
+                                <select>
+                                    <option>中国+86</option>
+                                    <option>中国台湾+886</option>
+                                    <option>中国香港+852</option>
+                                </select>
+                            </li>
+                            <li>
+                                <input type="text" id="textval" class="textclass" placeholder="请输入手机号码"
+                                       onblur="textInput()">
+                                <label id="label1" class="label1"></label>
+                            </li>
+                            <li>
+                                <input type="text" class="code1" id="inputCode" placeholder="请输入验证码"
+                                       onblur="checkInput()">
+                                <div class="checode">
+                                    <div class="code" id="checkCode" onClick="createCode()"></div>
+                                    <!--<a href="#" onClick="createCode()" class="code-a">看不清换一张</a>-->
+                                </div>
+                                <label id="label02" class="label1"></label>
+                            </li>
+                            <li>
+                                <input type="button" value="立即注册" class="btns" onclick="textInput()&checkInput()">
+                            </li>
+
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="head_menu03">
+
+        <div class="head_menu03_first" id="head_menu03_first">
+            <a href="#">购物车</a>
+            <div>购物车空空如也...</div>
+        </div>
+    </div>
+
+</div>
+
+<div class="header">
+    <div class="header_img">
+        <a href="#" title="小米官网"><img src="http://on4ce3fqm.bkt.clouddn.com/xiaomi.PNG"> </a>
+    </div>
+    <div class="header_menue">
+        <div class="header_menue01">
+            <ul>
+                <li class="header_menue01_li">
+                    <a href="#">
+                        <p>小米手机</p>
+                    </a>
+                    <ul class="header_menue01_li_ul">
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/58.png"> </a></div>
+                            <h5><a href="#" class="font01">小米手机5c</a></h5>
+                            <h5>1359元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> http://on4ce3fqm.bkt.clouddn.com/58.png"> </a></div>
+                            <h5><a href="#" class="font01">小米手机5c</a></h5>
+                            <h5>1359元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> http://on4ce3fqm.bkt.clouddn.com/58.png"> </a></div>
+                            <h5><a href="#" class="font01">小米手机5c</a></h5>
+                            <h5>1359元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> http://on4ce3fqm.bkt.clouddn.com/58.png"> </a></div>
+                            <h5><a href="#" class="font01">小米手机5c</a></h5>
+                            <h5>1359元</h5>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>红米</p>
+                        <!--<div class="header_menue01_first"></div>-->
+                    </a>
+                    <ul class="header_menue01_li_ul">
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/59.jpg"> </a></div>
+                            <h5><a href="#" class="font01">红米Noto 4X</a></h5>
+                            <h5>999元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/60.jpg"> </a></div>
+                            <h5><a href="#" class="font01">红米Noto</a></h5>
+                            <h5>999元起</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/61.jpg"> </a></div>
+                            <h5><a href="#" class="font01">红米4X</a></h5>
+                            <h5>699元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/62.jpg"> </a></div>
+                            <h5><a href="#" class="font01">红米4</a></h5>
+                            <h5>699元</h5>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>平板·笔记本</p>
+                        <!--<div class="header_menue01_first"></div>-->
+                    </a>
+                    <ul class="header_menue01_li_ul">
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/63.jpg"> </a></div>
+                            <h5><a href="#" class="font01">小米平板电脑</a></h5>
+                            <h5>1999元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/64.jpg"> </a></div>
+                            <h5><a href="#" class="font01">小米笔记本Air 12.5寸</a></h5>
+                            <h5>3999元起</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/64.jpg"> </a></div>
+                            <h5><a href="#" class="font01">小米笔记本Air 13.5寸</a></h5>
+                            <h5>4999元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/64.jpg"> </a></div>
+                            <h5><a href="#" class="font01">小米笔记本Air 14.5寸</a></h5>
+                            <h5>5999元</h5>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>电视</p>
+                        <!--<div class="header_menue01_first"></div>-->
+                    </a>
+                    <ul class="header_menue01_li_ul">
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/65.png"> </a></div>
+                            <h5><a href="#" class="font01">小米电视3s 55英寸</a></h5>
+                            <h5>1999元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/66.png"> </a></div>
+                            <h5><a href="#" class="font01">小米电视3s 59英寸</a></h5>
+                            <h5>3999元起</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/67.png"> </a></div>
+                            <h5><a href="#" class="font01">小米电视3s 62英寸</a></h5>
+                            <h5>4999元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/68.png"> </a></div>
+                            <h5><a href="#" class="font01">小米电视3s 70英寸</a></h5>
+                            <h5>5999元</h5>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>盒子·影音</p>
+                        <!--<div class="header_menue01_first"></div>-->
+                    </a>
+                    <ul class="header_menue01_li_ul">
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/69.png"> </a></div>
+                            <h5><a href="#" class="font01">小米盒子3s</a></h5>
+                            <h5>299元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/69.png"> </a></div>
+                            <h5><a href="#" class="font01">小米盒子3c</a></h5>
+                            <h5>199元起</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/70.jpg"> </a></div>
+                            <h5><a href="#" class="font01">小米盒子3 增强版</a></h5>
+                            <h5>599元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/71.png"> </a></div>
+                            <h5><a href="#" class="font01">小米家庭影院</a></h5>
+                            <h5>1999元</h5>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>路由器</p>
+                        <!--<div class="header_menue01_first"></div>-->
+                    </a>
+                    <ul class="header_menue01_li_ul">
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/72.png"> </a></div>
+                            <h5><a href="#" class="font01">小米路由器HD</a></h5>
+                            <h5>399元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/73.png"> </a></div>
+                            <h5><a href="#" class="font01">小米路由器Pro</a></h5>
+                            <h5>199元起</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/74.png"> </a></div>
+                            <h5><a href="#" class="font01">小米路由器3</a></h5>
+                            <h5>149元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/75.jpg"> </a></div>
+                            <h5><a href="#" class="font01">小米WiFi放大器3</a></h5>
+                            <h5>99元</h5>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>智能硬件</p>
+                        <!--<div class="header_menue01_first"></div>-->
+                    </a>
+                    <ul class="header_menue01_li_ul">
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/76.jpg"> </a></div>
+                            <h5><a href="#" class="font01">米家行车记录仪</a></h5>
+                            <h5>599元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/77.png"> </a></div>
+                            <h5><a href="#" class="font01">小米无人飞机4k</a></h5>
+                            <h5>3999元起</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/78.jpg"> </a></div>
+                            <h5><a href="#" class="font01">小米米家对讲机</a></h5>
+                            <h5>399元</h5>
+                        </li>
+                        <li>
+                            <div class="header01_li_ul_image"><a href="#"> <img src="http://on4ce3fqm.bkt.clouddn.com/79.jpg"> </a></div>
+                            <h5><a href="#" class="font01">米家HD电饭煲</a></h5>
+                            <h5>399元</h5>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>服务</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>社区</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="header_input">
+        <div class="header_input001">
+            <form><input type="text" list="text0" placeholder="请输入关键字" spellcheck="true" autocomplete="on">
+                <datalist id="text0">
+                    <option>小米5c</option>
+                    <option>小米5</option>
+                    <option>红米2A</option>
+                    <option>红米2</option>
+                    <option>红米</option>
+                    <option>小米</option>
+                    <option>小米Note</option>
+                    <option>小米Note2</option>
+                </datalist>
+            </form>
+            <button>搜索</button>
+        </div>
+    </div>
+</div>
+
+<div class="conter">
+    <div class="conter01">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="http://on4ce3fqm.bkt.clouddn.com/1.jpg">
+
+                </div>
+                <div class="item">
+                    <img src="http://on4ce3fqm.bkt.clouddn.com/2.jpg">
+
+                </div>
+                <div class="item">
+                    <img src="http://on4ce3fqm.bkt.clouddn.com/3.jpg">
+
+                </div>
+                <div class="item">
+                    <img src="http://on4ce3fqm.bkt.clouddn.com/4.jpg">
+
+                </div>
+                <div class="item">
+                    <img src="http://on4ce3fqm.bkt.clouddn.com/05.jpg">
+
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="font-awsome"><</span>
+                <!--<span class="sr-only">Previous</span>-->
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="font-awsome">> </span>
+                <!--<span class="sr-only">Next</span>-->
+            </a>
+        </div>
+    </div>
+
+    <div class="conter02">
+        <div class="conter02-ul">
+            <ul>
+                <li><a href="#">手机 电话卡<span>></span> </a>
+                    <div class="conter02_li_ul01">
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/80.png">
+                                    <h5>小米手机5c</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/81.jpg">
+                                    <h5>小米Not22</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/82.jpg">
+                                    <h5>小米手机MIX</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/83.jpg">
+                                    <h5>小米手机5s</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/84.jpg">
+                                    <h5>小米5s Plus</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/85.jpg">
+                                    <h5>小米手机5</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                        </div>
+
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/80.png">
+                                    <h5>小米手机5c</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/81.jpg">
+                                    <h5>小米Not22</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/82.jpg">
+                                    <h5>小米手机MIX</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/83.jpg">
+                                    <h5>小米手机5s</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/84.jpg">
+                                    <h5>小米5s Plus</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/85.jpg">
+                                    <h5>小米手机5</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                        </div>
+
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/86.jpg">
+                                    <h5>小米移动 电话卡</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">笔记本 平板<span>></span></a>
+                    <div class="conter02_li_ul02">
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/87.jpg">
+                                    <h5>小米笔记本</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/88.jpg">
+                                    <h5>小米平板2</h5>
+                                </a>
+                                <button>选购</button>
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/89.jpg">
+                                    <h5>USB-转接器</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/90.jpg">
+                                    <h5>小米笔记本内胆包</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/91.jpg">
+                                    <h5>小米便携鼠标</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+
+                        </div>
+
+                    </div>
+                </li>
+                <li><a href="#">电视 盒子<span>></span></a>
+                    <div class="conter02_li_ul03">
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/92.jpg">
+                                    <h5>小米电视3s 38寸</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/93.png">
+                                    <h5>小米电视3s 55寸</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/93.png">
+                                    <h5>小米电视3s 58寸</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/94.png">
+                                    <h5>小米电视3s 60寸</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/95.png">
+                                    <h5>小米电视3s 67寸</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/96.jpg">
+                                    <h5>小米电视3s 70寸</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                        </div>
+
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/97.jpg">
+                                    <h5>小米盒子5s</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/98.jpg">
+                                    <h5>小米盒子</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/99.jpg">
+                                    <h5>小米盒子</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/100.jpg">
+                                    <h5>小米游戏手柄</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/99.jpg">
+                                    <h5>小米盒子</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/98.jpg">
+                                    <h5>小米盒子</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                        </div>
+
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/97.jpg">
+                                    <h5>小米电视5c 70寸</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">路由器 智能硬件<span>></span></a>
+                    <div class="conter02_li_ul04">
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/101.jpg">
+                                    <h5>米家扫地机器人及配件</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/102.jpg">
+                                    <h5>小米VR眼镜</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/103.jpg">
+                                    <h5>小米路由器</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/104.jpg">
+                                    <h5>九号平衡车</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/105.jpg">
+                                    <h5>电助力折叠自行车</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/106.jpg">
+                                    <h5>米家恒温电水壶</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                        </div>
+
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/101.jpg">
+                                    <h5>米家扫地机器人及配件</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/102.jpg">
+                                    <h5>小米VR眼镜</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/103.jpg">
+                                    <h5>小米路由器</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/104.jpg">
+                                    <h5>九号平衡车</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/105.jpg">
+                                    <h5>米家恒温电水壶</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/106.jpg">
+                                    <h5>米家扫地机器人及配件</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                        </div>
+
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/101.jpg">
+                                    <h5>小米电视5c 70寸</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+
+                        </div>
+                    </div>
+                <li><a href="#">移动电源 电池 插线板<span>></span></a>
+                    <div class="conter02_li_ul05">
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/107.jpg">
+                                    <h5>小米移动电源</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/108.jpg">
+                                    <h5>插线板</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/109.jpg">
+                                    <h5>品牌移动电源</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/110.jpg">
+                                    <h5>移动电源配件</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/111.jpg">
+                                    <h5>电池</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/112.jpg">
+                                    <h5>充电器</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                        </div>
+
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/107.jpg">
+                                    <h5>小米移动电源</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/108.jpg">
+                                    <h5>插线板</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/109.jpg">
+                                    <h5>品牌移动电源</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/110.jpg">
+                                    <h5>移动电源配件</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/111.jpg">
+                                    <h5>电池</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/112.jpg">
+                                    <h5>充电器</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li><a href="#">耳机 音箱<span>></span></a>
+                    <div class="conter02_li_ul06">
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/113.jpg">
+                                    <h5>小米头戴式耳机</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/114.jpg">
+                                    <h5>小米头戴式耳机轻松版</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/115.jpg">
+                                    <h5>小米圈铁耳机Pro</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/116.jpg">
+                                    <h5>小米圈铁耳机</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/117.jpg">
+                                    <h5>小米电视3s 67寸</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/118.jpg">
+                                    <h5>小米胶囊耳机</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                        </div>
+
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/97.jpg">
+                                    <h5>小米活塞耳机</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/119.jpg">
+                                    <h5>小米蓝牙耳机</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/120.jpg">
+                                    <h5>小米运动蓝牙耳机</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/121.jpg">
+                                    <h5>品牌耳机</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/122.jpg">
+                                    <h5>小米网络音响</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/123.png">
+                                    <h5>小米蓝牙音箱</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                        </div>
+
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/124.jpg">
+                                    <h5>小米随身蓝牙音箱</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">保护套 贴膜<span>></span></a>
+                    <div class="conter02_li_ul07">
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/125.jpg">
+                                    <h5>贴膜</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/126.jpg">
+                                    <h5>保护膜/保护壳</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li><a href="#">线材 支架 存储卡<span>></span></a>
+                    <div class="conter02_li_ul07">
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/127.jpg">
+                                    <h5>线材</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/128.jpg">
+                                    <h5>自拍杆</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/129.jpg">
+                                    <h5>手机支架</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/130.jpg">
+                                    <h5>存储卡</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li><a href="#">箱包 服饰<span>></span></a>
+                    <div class="conter02_li_ul08">
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/131.jpg">
+                                    <h5>箱包</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/132.jpg">
+                                    <h5>90分旅行箱</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/133.jpg">
+                                    <h5>服饰</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+
+                        </div>
+
+                    </div>
+                </li>
+                <li><a href="#">米兔 生活周边<span>></span></a>
+                    <div class="conter02_li_ul09">
+                        <div class="conter02_li_ul001">
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/134.jpg">
+                                    <h5>米兔玩偶</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/135.jpg">
+                                    <h5>鼠标垫</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/136.jpg">
+                                    <h5>生活周边</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/137.jpg">
+                                    <h5>《小米》会刊</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+                            <div class="conter01_li_ul0002">
+                                <a href="#">
+                                    <img src="http://on4ce3fqm.bkt.clouddn.com/138.jpg">
+                                    <h5>8H乳胶枕</h5>
+                                </a>
+                                <!--<button>选购</button>-->
+                            </div>
+
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="conter_next">
+    <div class="conter_next01">
+        <table>
+            <tr>
+                <td>
+                    <a href="#">
+                        <img src="http://on4ce3fqm.bkt.clouddn.com/7.PNG">
+                        <p>选购手机</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <img src="http://on4ce3fqm.bkt.clouddn.com/8.PNG">
+                        <p>企业团购</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <img src="http://on4ce3fqm.bkt.clouddn.com/9.PNG">
+                        <p>一元团购</p>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">
+                        <img src="http://on4ce3fqm.bkt.clouddn.com/10.PNG">
+                        <p>小米移动</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <img src="http://on4ce3fqm.bkt.clouddn.com/11.PNG">
+                        <p>以旧换新</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <img src="http://on4ce3fqm.bkt.clouddn.com/12.PNG">
+                        <p>话费充值</p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="conter_next02">
+        <ul>
+            <li><a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/6.jpg"> </a></li>
+            <li><a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/7.jpg"> </a></li>
+            <li><a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/8.jpg"> </a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="conter_body">
+    <div class="conter_body_title">
+        <h2>小米明星单品</h2>
+    </div>
+
+    <div class="conter_body_01">
+        <ul>
+            <li class="li_01">
+                <div class="conter_body_01_img">
+                    <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/13.png"> </a>
+                </div>
+                <div class="conter_body_01_text">
+                    <a href="#">小米笔记本</a>
+                    <p>更轻更薄，像杂志一样随身携带</p>
+                </div>
+                <div class="conter_body_01_place">
+                    <p>3499元</p>
+                </div>
+            </li>
+            <li class="li_02">
+                <div class="conter_body_01_img">
+                    <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/14.png"> </a>
+                </div>
+                <div class="conter_body_01_text">
+                    <a href="#">小米电视3s</a>
+                    <p>原装液晶屏，金属边框</p>
+                </div>
+                <div class="conter_body_01_place">
+                    <p>4399元</p>
+                </div>
+            </li>
+            <li class="li_03">
+                <div class="conter_body_01_img">
+                    <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/15.png"> </a>
+                </div>
+                <div class="conter_body_01_text">
+                    <a href="#">小米移动电源2</a>
+                    <p>双向充电，高密度聚合物电芯</p>
+                </div>
+                <div class="conter_body_01_place">
+                    <p>99元</p>
+                </div>
+            </li>
+            <li class="li_04">
+                <div class="conter_body_01_img">
+                    <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/16.png"> </a>
+                </div>
+                <div class="conter_body_01_text">
+                    <a href="#">小米手环2</a>
+                    <p>OLED显示屏，升级计算步法</p>
+                </div>
+                <div class="conter_body_01_place">
+                    <p>199元</p>
+                </div>
+            </li>
+            <li class="li_05">
+                <div class="conter_body_01_img">
+                    <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/17.png"> </a>
+                </div>
+                <div class="conter_body_01_text">
+                    <a href="#">米家扫地机器人</a>
+                    <p>智能路径规划，扫得更干净更快</p>
+                </div>
+                <div class="conter_body_01_place">
+                    <p>1499元</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="background">
+    <div class="conter_body01">
+        <div class="conter_body01_title">
+            <div class="conter_body_01_title01"><p>智能硬件</p></div>
+            <div class="conter_body01_right"><a href="#"> 查看全部</a></div>
+        </div>
+        <div class="conter_body01_table">
+            <div class="conter_body01_table_01">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/18.jpg"> </a>
+            </div>
+            <div class="conter_body01_table_02">
+                <ul>
+                    <li>
+                        <div class="conter_body_01_img">
+                            <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/19.jpg"> </a>
+                        </div>
+                        <div class="conter_body_01_text">
+                            <a href="#">米家行车记录仪</a>
+                            <p>智能路径规划，扫得更干净更快</p>
+                        </div>
+                        <div class="conter_body_01_place">
+                            <p>499元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="conter_body_01_img">
+                            <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/20.jpg"> </a>
+                        </div>
+                        <div class="conter_body_01_text">
+                            <a href="#">小米无人飞机4K</a>
+                            <p>飞得更快，更高</p>
+                        </div>
+                        <div class="conter_body_01_place">
+                            <p>2499元</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="conter_body_01_img">
+                            <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/21.jpg"> </a>
+                        </div>
+                        <div class="conter_body_01_text">
+                            <a href="#">米家智能摄像头</a>
+                            <p>智能路径规划</p>
+                        </div>
+                        <div class="conter_body_01_place">
+                            <p>499元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="conter_body_01_img">
+                            <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/22.jpg"> </a>
+                        </div>
+                        <div class="conter_body_01_text">
+                            <a href="#">小米米家对讲机</a>
+                            <p>智能路径规划</p>
+                        </div>
+                        <div class="conter_body_01_place">
+                            <p>199元</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="conter_body01_table_03">
+                <ul class="ul_li">
+                    <li>
+                        <div class="conter_body_01_img">
+                            <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/19.jpg"> </a>
+                        </div>
+                        <div class="conter_body_01_text">
+                            <a href="#">米家行车记录仪</a>
+                            <p>智能路径规划，扫得更干净更快</p>
+                        </div>
+                        <div class="conter_body_01_place">
+                            <p>499元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="conter_body_01_img">
+                            <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/20.jpg"> </a>
+                        </div>
+                        <div class="conter_body_01_text">
+                            <a href="#">小米无人飞机4K</a>
+                            <p>飞得更快，更高</p>
+                        </div>
+                        <div class="conter_body_01_place">
+                            <p>2499元</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="conter_body_01_img">
+                            <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/21.jpg"> </a>
+                        </div>
+                        <div class="conter_body_01_text">
+                            <a href="#">米家智能摄像头</a>
+                            <p>智能路径规划</p>
+                        </div>
+                        <div class="conter_body_01_place">
+                            <p>499元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="conter_body_01_img">
+                            <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/22.jpg"> </a>
+                        </div>
+                        <div class="conter_body_01_text">
+                            <a href="#">小米米家对讲机</a>
+                            <p>智能路径规划</p>
+                        </div>
+                        <div class="conter_body_01_place">
+                            <p>199元</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="conter_body02">
+        <div class="conter_body02_first">
+            搭配
+        </div>
+
+        <div class="conter_body02_second">
+            <div class="conter_body02_second01">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/23.png"> </a>
+            </div>
+            <div class="conter_body02_second02">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/24.jpg">
+                    <p>移动电源10000ml</p></a>
+                <p>200元</p>
+                <div class="conter_body02_opaticy">
+                    比我想象中的要轻,小巧玲珑，非常适合外出使用
+                </div>
+            </div>
+            <div class="conter_body02_second03" id="conter_body02_second03">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/25.jpg">
+                    <p>小米移动电源</p>
+                </a>
+                <p>100元</p>
+                <div class="conter_body02_opaticy" id="conter_body02_opaticy">
+                    比我想象中的要轻...
+                </div>
+            </div>
+            <div class="conter_body02_second04" id="conter_body02_second04">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/26.jpg">
+                    <p>小米移动电源</p></a>
+                <p>130元</p>
+                <div class="conter_body02_opaticy" id="conter_body02_opaticy01">
+                    比我想象中的要轻...
+                </div>
+            </div>
+            <div class="conter_body02_second05" id="conter_body02_second05">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/27.jpg">
+                    <p>移动电源5000ml</p></a>
+                <p>105元</p>
+                <div class="conter_body02_opaticy" id="conter_body02_opaticy02">
+                    比我想象中的要轻...
+                </div>
+            </div>
+
+        </div>
+
+        <div class="conter_body02_second00">
+            <div class="conter_body02_second01">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/28.jpg"> </a>
+            </div>
+            <div class="conter_body02_second02">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/29.jpg">
+                    <p>小米低音炮</p></a>
+                <p>300元</p>
+            </div>
+            <div class="conter_body02_second03">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/30.jpg">
+                    <p>移动音箱</p>
+                </a>
+                <p>500元</p>
+                <div class="conter_body02_opaticy">
+                    比我想象中的要轻...
+                </div>
+            </div>
+            <div class="conter_body02_second04">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/31.jpg">
+                    <p>蓝牙车充</p></a>
+                <p>330元</p>
+                <div class="conter_body02_opaticy">
+                    比我想象中的要轻...
+                </div>
+            </div>
+            <div class="conter_body02_second05">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/29.jpg">
+                    <p>移动电源5000ml</p></a>
+                <p>105元</p>
+                <div class="conter_body02_opaticy">
+                    比我想象中的要轻...
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="conter_body03">
+        <div class="conter_body02_first">
+            配件
+        </div>
+
+        <div class="conter_body02_second">
+            <div class="conter_body02_second01">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/32.jpg"> </a>
+            </div>
+            <div class="conter_body02_second02">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/33.jpg">
+                    <p>小米数据线</p></a>
+                <p>20元</p>
+                <div class="conter_body02_opaticy">
+                    比我想象中的要好用...
+                </div>
+            </div>
+            <div class="conter_body02_second03" id="">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/34.jpg">
+                    <p>小米指环支架</p>
+                </a>
+                <p>20元</p>
+
+            </div>
+            <div class="conter_body02_second04">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/35.jpg">
+                    <p>小米蓝牙手柄</p></a>
+                <p>230元</p>
+
+            </div>
+            <div class="conter_body02_second05">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/36.jpg">
+                    <p>蓝牙语音遥控器</p></a>
+                <p>205元</p>
+
+            </div>
+
+        </div>
+
+        <div class="conter_body02_second00">
+            <div class="conter_body02_second01">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/37.png"> </a>
+            </div>
+            <div class="conter_body02_second02">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/38.jpg">
+                    <p>小米便携鼠标</p></a>
+                <p>200元</p>
+            </div>
+            <div class="conter_body02_second03">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/39.jpg">
+                    <p>多功能转接器</p>
+                </a>
+                <p>30元</p>
+
+            </div>
+            <div class="conter_body02_second04">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/40.jpg">
+                    <p>USB转接头</p></a>
+                <p>23元</p>
+
+            </div>
+            <div class="conter_body02_second05">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/38.jpg">
+                    <p>蓝牙便携鼠标</p></a>
+                <p>225元</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="conter_body04">
+        <div class="conter_body02_first">
+            周边
+        </div>
+
+        <div class="conter_body02_second">
+            <div class="conter_body02_second01">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/41.jpg"> </a>
+            </div>
+            <div class="conter_body02_second02">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/42.jpg">
+                    <p>24寸旅行箱</p></a>
+                <p>202元</p>
+            </div>
+            <div class="conter_body02_second03">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/43.jpg">
+                    <p>最生活浴巾</p>
+                </a>
+                <p>99元</p>
+
+            </div>
+            <div class="conter_body02_second04">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/44.jpg">
+                    <p>8H标准乳胶枕</p></a>
+                <p>130元</p>
+
+            </div>
+            <div class="conter_body02_second05">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/45.jpg">
+                    <p>经典连帽卫衣</p></a>
+                <p>105元</p>
+
+            </div>
+
+        </div>
+
+        <div class="conter_body02_second00">
+            <div class="conter_body02_second01">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/46.jpg"> </a>
+            </div>
+            <div class="conter_body02_second02">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/47.jpg">
+                    <p>米家签字笔</p></a>
+                <p>20元</p>
+            </div>
+            <div class="conter_body02_second03">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/48.jpg">
+                    <p>防雾霾口罩</p>
+                </a>
+                <p>30元</p>
+
+            </div>
+            <div class="conter_body02_second04">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/49.jpg">
+                    <p>8H多功能防护颈</p></a>
+                <p>88元</p>
+
+            </div>
+            <div class="conter_body02_second05">
+                <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/42.jpg">
+                    <p>24寸旅行箱</p></a>
+                <p>225元</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="conter_body05">
+        <div class="conter_body_title">
+            <h2>为你推荐</h2>
+        </div>
+        <div class="conter_body_05">
+            <ul>
+                <li>
+                    <div class="conter_body_01_img">
+                        <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/13.png"> </a>
+                    </div>
+                    <div class="conter_body_01_text">
+                        <a href="#">小米笔记本</a>
+                        <p>更轻更薄，像杂志一样随身携带</p>
+                    </div>
+                    <div class="conter_body_01_place">
+                        <p>3499元</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="conter_body_01_img">
+                        <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/14.png"> </a>
+                    </div>
+                    <div class="conter_body_01_text">
+                        <a href="#">小米电视3s</a>
+                        <p>原装液晶屏，金属边框</p>
+                    </div>
+                    <div class="conter_body_01_place">
+                        <p>4399元</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="conter_body_01_img">
+                        <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/15.png"> </a>
+                    </div>
+                    <div class="conter_body_01_text">
+                        <a href="#">小米移动电源2</a>
+                        <p>双向充电，高密度聚合物电芯</p>
+                    </div>
+                    <div class="conter_body_01_place">
+                        <p>99元</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="conter_body_01_img">
+                        <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/16.png"> </a>
+                    </div>
+                    <div class="conter_body_01_text">
+                        <a href="#">小米手环2</a>
+                        <p>OLED显示屏，升级计算步法</p>
+                    </div>
+                    <div class="conter_body_01_place">
+                        <p>199元</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="conter_body_01_img">
+                        <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/17.png"> </a>
+                    </div>
+                    <div class="conter_body_01_text">
+                        <a href="#">米家扫地机器人</a>
+                        <p>智能路径规划，扫得更干净更快</p>
+                    </div>
+                    <div class="conter_body_01_place">
+                        <p>1499元</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="conter_body06">
+        <div class="conter_body06_title">
+            热销产品
+        </div>
+
+        <div class="conter_body06_01">
+            <div class="conter_body06_01_01">
+                <div class="conter_body06_01_01_img">
+                    <a href="#">
+                        <img src="http://on4ce3fqm.bkt.clouddn.com/50.jpg">
+                    </a>
+                </div>
+                <div class="conter_body06_01_01_text">
+                    <a href="#">
+                        超级喜欢！小巧玲珑！音质完美！不知道为什么！
+                        只要是小米出的东西我都喜欢！那倒是因为那一句？？
+                    </a>
+                    <p>来自xxx的评价</p>
+                </div>
+                <div class="conter_body06_01_01_place">
+                    <a href="#">小米随身蓝牙音箱</a>
+                    <span>59元</span>
+                </div>
+            </div>
+
+            <div class="conter_body06_01_01">
+                <div class="conter_body06_01_01_img">
+                    <a href="#">
+                        <img src="http://on4ce3fqm.bkt.clouddn.com/51.jpg">
+                    </a>
+                </div>
+                <div class="conter_body06_01_01_text">
+                    <a href="#">
+                        超级喜欢！小巧玲珑！不知道为什么！
+                        只要是小米出的东西我都喜欢！那倒是因为那一句？？
+                    </a>
+                    <p>来自xxx的评价</p>
+                </div>
+                <div class="conter_body06_01_01_place">
+                    <a href="#">小米移动电源</a>
+                    <span>79元</span>
+                </div>
+            </div>
+
+            <div class="conter_body06_01_01">
+                <div class="conter_body06_01_01_img">
+                    <a href="#">
+                        <img src="http://on4ce3fqm.bkt.clouddn.com/52.jpg">
+                    </a>
+                </div>
+                <div class="conter_body06_01_01_text">
+                    <a href="#">
+                        手机好用，反应快，价格适中，会常光顾，赞，五分好评！
+                    </a>
+                    <p>来自xxx的评价</p>
+                </div>
+                <div class="conter_body06_01_01_place">
+                    <a href="#">小米随身蓝牙音箱</a>
+                    <span>59元</span>
+                </div>
+            </div>
+
+            <div class="conter_body06_01_01">
+                <div class="conter_body06_01_01_img">
+                    <a href="#">
+                        <img src="http://on4ce3fqm.bkt.clouddn.com/53.jpg">
+                    </a>
+                </div>
+                <div class="conter_body06_01_01_text">
+                    <a href="#">
+                        样子好可爱，特别是转来转去时很有趣。
+                        让它休眠时它就会把头转过去背对着你了，
+                        唤醒它又会自动转回来
+                    </a>
+                    <p>来自xxx的评价</p>
+                </div>
+                <div class="conter_body06_01_01_place">
+                    <a href="#">米家智能摄影头</a>
+                    <span>159元</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer01">
+        <ul>
+            <li><a href="#">预约维修服务</a></li>
+            <li><a href="#">7天无理由退货</a></li>
+            <li><a href="#">15天免费换货</a></li>
+            <li><a href="#">满150包邮</a></li>
+            <li><a href="#">520家售后网点</a></li>
+        </ul>
+    </div>
+
+    <div class="footer02">
+        <div class="footer02_first">
+            <div class="footer_first01">帮助中心</div>
+            <div class="footer02_first02">
+                <ul>
+                    <li><a href="">账户管理</a></li>
+                    <li><a href="">购物指南</a></li>
+                    <li><a href="">订单操作</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer02_first">
+            <div class="footer_first01">服务支持</div>
+            <div class="footer02_first02">
+                <ul>
+                    <li><a href="">售后政策</a></li>
+                    <li><a href="">自助服务</a></li>
+                    <li><a href="">相关下载</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer02_first">
+            <div class="footer_first01">线下门店</div>
+            <div class="footer02_first02">
+                <ul>
+                    <li><a href="">小米之家</a></li>
+                    <li><a href="">服务网点</a></li>
+                    <li><a href="">零售网点</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer02_first">
+            <div class="footer_first01">关于小米</div>
+            <div class="footer02_first02">
+                <ul>
+                    <li><a href="">了解小米</a></li>
+                    <li><a href="">加入小米</a></li>
+                    <li><a href="">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer02_first">
+            <div class="footer_first01">关注我们</div>
+            <div class="footer02_first02">
+                <ul>
+                    <li><a href="">新浪微博</a></li>
+                    <li><a href="">小米部落</a></li>
+                    <li><a href="">官方微信</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer02_first">
+            <div class="footer_first01">特色服务</div>
+            <div class="footer02_first02">
+                <ul>
+                    <li><a href="">F码通道</a></li>
+                    <li><a href="">礼物码</a></li>
+                    <li><a href="">防伪查询</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer02_second">
+            <h3>400-100-5678</h3>
+            <h5>周一至周日 8:00-18:00</h5>
+            <h5>（仅收市话费）</h5>
+            <p>
+                <button>24小时在线服务</button>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="footer001">
+    <div class="footer001_first">
+        <div class="footer001_first_img">
+            <a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/xiaomi.PNG"> </a>
+        </div>
+        <div class="footer001_first_text">
+            <div class="footer001_first_text00">
+                <div class="footer001_first_text01">
+                    <ul>
+                        <li><a href="#">小米商城</a></li>
+                        <li><a href="#">MIUI</a></li>
+                        <li><a href="#">米聊</a></li>
+                        <li><a href="#">多看书城</a></li>
+                        <li><a href="#">小米路由器</a></li>
+                        <li><a href="#">视频电话</a></li>
+                        <li><a href="#">企业团购</a></li>
+                        <li><a href="#">小米天猫店</a></li>
+                        <li><a href="#">小米淘宝直营店</a></li>
+                        <li><a href="#">小米网盟</a></li>
+                        <li><a href="#">小米移动</a></li>
+                        <li><a href="#">Select Region</a></li>
+                    </ul>
+                </div>
+                <div class="footer001_first_text02">
+                    <p><a href="#">©mi.com</a> 京ICP证110507号 <a href="#"> 京ICP备10046444号</a> <a href="#">
+                        京公网安备11010802020134号</a> <a href="#"> 京网文[2014]0059-0009号</a></p>
+                </div>
+                <div class="footer001_first_text03">
+                    <p>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer001_second">
+            <ul>
+                <li><a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/54.png"></a></li>
+                <li><a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/55.png"></a></li>
+                <li><a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/56.png"></a></li>
+                <li><a href="#"><img src="http://on4ce3fqm.bkt.clouddn.com/57.png"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

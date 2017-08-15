@@ -1,0 +1,31 @@
+<html>
+<head><title>腾讯首页</title>
+</head>
+<body>
+<div style="border:1px solid black;width:1000px;height:160px;margin:0 auto 100px auto;">
+	<div style="border:1px solid red;width:1000px;height:87px;">
+		<div style="width:137px;height:90px;float:left;margin-left:158px;">
+		<img src="aa.png"/>
+		</div>
+		<div style="background:black;width:381px;height:90px;float:left;margin-left:43px;"></div>
+		<div style="background:pink;width:150px;height:90px;float:left;margin-left:125px;"></div>
+	</div>
+	<div style="background:skyblue;width:1000px;height:73px;">
+		<div style="width:152px;height:73px;float:left;">
+			<div style="float:left;width:50px;margin-top:5px;text-align:center;color:white;">首页</div>
+			<div style="float:left;width:50px;margin-top:5px;text-align:center;color:white;">军事</div>
+			<div style="float:left;width:50px;margin-top:5px;text-align:center;color:white;">新闻</div>
+			<div style="float:left;width:50px;margin-top:5px;text-align:center;color:white;">美食</div>
+			<div style="float:left;width:50px;margin-top:5px;text-align:center;color:white;">音乐</div>
+			<div style="float:left;width:50px;margin-top:5px;text-align:center;color:green;">宝强</div>
+		</div>
+		<div style="width:145px;height:73px;background:yellow;float:left;"></div>
+		<div style="width:145px;height:73px;background:gray;float:left;"></div>
+		<div style="width:145px;height:73px;background:purple;float:left;"></div>
+		<div style="width:145px;height:73px;background:pink;float:left;"></div>
+		<div style="width:145px;height:73px;background:blue;float:left;"></div>
+		<div style="width:108px;height:73px;background:black;float:left;"></div>	
+	</div>
+</div>
+</body>
+<ml>
